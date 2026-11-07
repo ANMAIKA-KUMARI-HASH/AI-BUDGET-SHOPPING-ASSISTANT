@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Budget Shopping Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            🛍️ AI Budget Shopping Assistant
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#recommend">Recommendation</a>
+            <a href="#compare">Compare</a>
+            <a href="#wishlist">Wishlist</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <h1>AI Budget Shopping Assistant</h1>
+
+        <p>
+            Find the best products according to your budget and requirements.
+        </p>
+
+        <button onclick="startShopping()">
+            Start Shopping
+        </button>
+
+    </section>
+
+
+    <!-- Budget Section -->
+    <section class="shopping-section">
+
+        <h2>🪙 Set Your Monthly Budget</h2>
+
+        <div class="budget-box">
+
+            <label>Monthly Budget</label>
+
+            <input
+                type="number"
+                id="monthlyBudget"
+                placeholder="Enter your budget (₹)"
+            >
+
+            <button onclick="setBudget()">
+                Set Budget
+            </button>
+
+        </div>
+
+
+        <!-- Budget Status -->
+        <div class="budget-status">
+
+            <div class="budget-card">
+                <h3>Monthly Budget</h3>
+                <p id="budgetAmount">₹0</p>
+            </div>
+
+            <div class="budget-card">
+                <h3>Spent</h3>
+                <p id="spentAmount">₹0</p>
+            </div>
+
+            <div class="budget-card">
+                <h3>Remaining</h3>
+                <p id="remainingAmount">₹0</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Category Section -->
+    <section id="recommend" class="shopping-section">
+
+        <h2>🛒 Select Product Category</h2>
+
+        <select id="category">
+
+            <option value="">
+                Select Category
+            </option>
+
+            <option value="clothes">
+                Clothes
+            </option>
+
+            <option value="shoes">
+                Shoes
+            </option>
+
+            <option value="electronics">
+                Electronics
+            </option>
+
+            <option value="accessories">
+                Accessories
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <!-- AI Chatbox -->
+    <section class="shopping-section">
+
+        <h2>🤖 Tell AI What You Need</h2>
+
+        <p>
+            Example: "₹3000 ke andar college ke liye black outfit chahiye."
+        </p>
+
+        <div class="chatbox">
+
+            <textarea
+                id="userRequirement"
+                placeholder="Tell me what you want..."
+            ></textarea>
+
+            <button onclick="getRecommendation()">
+                ✨ Get AI Recommendation
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Recommendation Result -->
+    <section class="shopping-section">
+
+        <h2>🏆 Best Product for You</h2>
+
+        <div id="recommendationResult">
+
+            <p>
+                Enter your budget and requirement to get recommendations.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Product Comparison -->
+    <section id="compare" class="shopping-section">
+
+        <h2>⚖️ Compare Products</h2>
+
+        <div id="comparison">
+
+            <p>
+                Select products to compare price, rating, reviews and features.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Wishlist -->
+    <section id="wishlist" class="shopping-section">
+
+        <h2>❤️ Wishlist</h2>
+
+        <div id="wishlistProducts">
+
+            <p>
+                Your saved products will appear here.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 AI Budget Shopping Assistant
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

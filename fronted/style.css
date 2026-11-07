@@ -1,0 +1,44 @@
+/* Unique Feature: Simulated Camera Face Scanner Box */
+.camera-box {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3498db;
+    border-radius: 50%;
+    margin: 15px auto;
+    background: #e8f4f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Scanner Laser Line Animation */
+.camera-box::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #e74c3c;
+    top: 0;
+    animation: scan 2s linear infinite;
+}
+
+@keyframes scan {
+    0% { top: 0%; }
+    50% { top: 100%; }
+    100% { top: 0%; }
+}
+
+/* Audio Token Card Design */
+.token-card {
+    background: #fff3cd;
+    border: 3px dashed #ffc107;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #856404;
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BudgetWise AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🛒 BudgetWise AI
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#recommend">Recommendation</a>
+            <a href="#compare">Compare</a>
+            <a href="#wishlist">Wishlist</a>
+            <a href="#tracker">Budget</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Smart Shopping Within Your Budget</h1>
+
+            <p>
+                Find the best products according to your budget,
+                preferences and needs.
+            </p>
+
+            <a href="#recommend" class="hero-button">
+                Start Shopping
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- RECOMMENDATION -->
+    <section id="recommend" class="section">
+
+        <h2>🤖 AI Product Recommendation</h2>
+
+        <p class="section-text">
+            Tell us your budget and what you are looking for.
+        </p>
+
+        <div class="search-box">
+
+            <label>Your Budget (₹)</label>
+
+            <input
+                type="number"
+                id="budget"
+                placeholder="Example: 1 or 20000"
+                min="1"
+                step="1"
+            >
+
+
+            <label>Product Category <span style="color:#ef4444">*</span></label>
+
+            <select id="category">
+
+                <option value="" disabled selected>
+                    -- Select Category First --
+                </option>
+
+                <option value="smartphone">
+                    📱 Smartphone
+                </option>
+
+                <option value="laptop">
+                    💻 Laptop
+                </option>
+
+                <option value="headphones">
+                    🎧 Headphones
+                </option>
+
+                <option value="smartwatch">
+                    ⌚ Smartwatch
+                </option>
+
+                <option value="tablet">
+                    📲 Tablet
+                </option>
+
+                <option value="shoes">
+                    👟 Shoes / Footwear
+                </option>
+
+                <option value="all">
+                    🛍️ All Categories
+                </option>
+
+            </select>
+
+
+            <label>What is important to you?</label>
+
+            <select id="priority">
+
+                <option value="rating">
+                    Best Rating
+                </option>
+
+                <option value="price">
+                    Lowest Price
+                </option>
+
+                <option value="value">
+                    Best Value
+                </option>
+
+            </select>
+
+
+            <button onclick="getRecommendation()">
+                🔍 Find Best Products
+            </button>
+
+        </div>
+
+
+        <div id="recommendationResult"></div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="section">
+
+        <h2>🛍️ Products</h2>
+
+        <div id="productList" class="product-grid"></div>
+
+    </section>
+
+
+    <!-- COMPARE -->
+    <section id="compare" class="section">
+
+        <h2>⚖️ Compare Products</h2>
+
+        <p class="section-text">
+            Select products from the product list and compare them.
+        </p>
+
+        <div id="compareList"></div>
+
+    </section>
+
+
+    <!-- WISHLIST -->
+    <section id="wishlist" class="section">
+
+        <h2>❤️ My Wishlist</h2>
+
+        <div id="wishlistList"></div>
+
+    </section>
+
+
+    <!-- BUDGET TRACKER -->
+    <section id="tracker" class="section">
+
+        <h2>💰 Budget Tracker</h2>
+
+        <div class="tracker-card">
+
+            <label>Monthly Budget</label>
+
+            <input
+                type="number"
+                id="monthlyBudget"
+                placeholder="Example: 30000"
+            >
+
+            <label>Amount Spent</label>
+
+            <input
+                type="number"
+                id="spentAmount"
+                placeholder="Example: 12000"
+            >
+
+            <button onclick="calculateBudget()">
+                Calculate Budget
+            </button>
+
+            <div id="budgetResult"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AI ASSISTANT -->
+    <section class="section">
+
+        <h2>💬 BudgetWise AI Assistant</h2>
+
+        <div class="chat-card">
+
+            <div id="chatMessages" class="chat-messages">
+
+                <div class="bot-message">
+                    Hello! 👋 I am BudgetWise AI.
+                    Ask me about budget shopping.
+                </div>
+
+            </div>
+
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    id="chatInput"
+                    placeholder="Ask something..."
+                >
+
+                <button onclick="sendMessage()">
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🛒 BudgetWise AI</h3>
+
+        <p>
+            Smart Shopping Within Your Budget
+        </p>
+
+        <p>
+            Mini Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

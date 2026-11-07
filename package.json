@@ -1,0 +1,22 @@
+{
+  "name": "ai-budget-shopping-assistant",
+  "version": "1.0.0",
+  "description": "AI Budget Shopping Assistant - BTech Mini Project (MERN Stack: React, Bootstrap, Node.js, Express, MongoDB)",
+  "scripts": {
+    "server": "node Backend/server.js",
+    "client": "npm --prefix frontend run dev",
+    "dev": "node Backend/server.js",
+    "install:all": "npm --prefix Backend install && npm --prefix frontend install"
+  },
+  "keywords": [
+    "shopping-assistant",
+    "ai-recommendations",
+    "budget-shopping",
+    "btech-mini-project",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "BTech Student",
+  "license": "ISC"
+}

@@ -1,0 +1,60 @@
+{
+  "totalBudget": 60000,
+  "expenses": [
+    {
+      "id": "exp-1793355161193-oivn7",
+      "title": "laptop",
+      "amount": 30000,
+      "category": "smartwatch",
+      "store": "Amazon",
+      "date": "2026-10-30",
+      "notes": "",
+      "originalProductId": null,
+      "createdAt": "2026-10-30T10:12:41.193Z"
+    },
+    {
+      "id": "exp-1793354522151-ane3z",
+      "title": "watch",
+      "amount": 1000,
+      "category": "smartwatch",
+      "store": "Amazon",
+      "date": "2026-10-30",
+      "notes": "",
+      "originalProductId": null,
+      "createdAt": "2026-10-30T10:02:02.151Z"
+    },
+    {
+      "id": "exp-1793354449224-qosz2",
+      "title": "smart phone",
+      "amount": 30000,
+      "category": "smartphones",
+      "store": "Amazon",
+      "date": "2026-10-30",
+      "notes": "",
+      "originalProductId": null,
+      "createdAt": "2026-10-30T10:00:49.224Z"
+    },
+    {
+      "id": "exp-1793354408273-6qhsy",
+      "title": "smart phone",
+      "amount": 20000,
+      "category": "smartphones",
+      "store": "Amazon",
+      "date": "2026-10-30",
+      "notes": "",
+      "originalProductId": null,
+      "createdAt": "2026-10-30T10:00:08.273Z"
+    },
+    {
+      "id": "exp-1792056937827-gzydd",
+      "title": "ASICS Mens running shoes",
+      "amount": 24000,
+      "category": "smartphones",
+      "store": "Reliance Digital",
+      "date": "2026-10-15",
+      "notes": "",
+      "originalProductId": null,
+      "createdAt": "2026-10-15T09:35:37.827Z"
+    }
+  ]
+}

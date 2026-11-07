@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 13: Climate Action - College Project</title>
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #1b4d3e;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #8fdfb6;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://unsplash.com') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .hero-btn {
+            background-color: #2e7d32;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .hero-btn:hover {
+            background-color: #1b5e20;
+            transform: scale(1.05);
+        }
+
+        /* Container & Sections */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            scroll-margin-top: 80px;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: #1b4d3e;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        h3::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #2e7d32;
+            margin: 8px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        /* Grid Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid #2e7d32;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h4 {
+            color: #1b4d3e;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        /* Contact/Footer Form Button Style */
+        .action-box {
+            background-color: #e8f5e9;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #c8e6c9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #bbb;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <h1>SDG 13: Climate Action</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#problems">Challenges</a>
+            <a href="#solutions">Solutions</a>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <div class="hero">
+        <h2>Take Urgent Action To Combat Climate Change</h2>
+        <p>Global warming is altering our planet. It is time to implement green solutions and secure our ecosystem for future generations.</p>
+        <a href="#solutions" class="hero-btn">See What You Can Do</a>
+    </div>
+
+    <div class="container">
+        
+        <!-- About Section -->
+        <section id="about">
+            <h3>About SDG 13</h3>
+            <p style="text-align: center; max-width: 800px; margin: 20px auto 0 auto; font-size: 1.1rem; color: #555;">
+                Sustainable Development Goal 13 aims to build climate resilience, integrate climate measures into national policies, and improve education and awareness on climate mitigation and adaptation.
+            </p>
+        </section>
+
+        <!-- Challenges Section -->
+        <section id="problems">
+            <h3>Key Challenges</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Rising Global Temperatures</h4>
+                    <p>Greenhouse gas emissions from fossil fuels trap heat in the atmosphere, steadily warming the planet and disrupting weather patterns.</p>
+                </div>
+                <div class="card">
+                    <h4>Melting Glaciers & Ice Sheets</h4>
+                    <p>Polar ice caps are melting rapidly, causing global sea levels to rise and threatening coastal cities with severe flooding.</p>
+                </div>
+                <div class="card">
+                    <h4>Extreme Weather Events</h4>
+                    <p>The frequency of intense droughts, severe heatwaves, destructive wildfires, and catastrophic hurricanes is rising worldwide.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions">
+            <h3>Actionable Solutions</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Renewable Energy</h4>
+                    <p>Transitioning from coal and oil to clean energy sources like solar, wind, and hydropower to lower emissions.</p>
+                </div>
+                <div class="card">
+                    <h4>Afforestation</h4>
+                    <p>Planting more trees and conserving existing forests to help natural carbon sinks absorb excess carbon dioxide from the atmosphere.</p>
+                </div>
+                <div class="card">
+                    <h4>Sustainable Practices</h4>
+                    <p>Adopting zero-waste systems, minimizing plastic consumption, and utilizing energy-efficient technologies daily.</p>
+                </div>
+            </div>
+            
+            <br><br>
+            <div class="action-box">
+                <h4>Make an Impact Today!</h4>
+                <p style="margin: 10px 0 15px 0;">Click the button below to pledge your support for active climate mitigation steps.</p>
+                <button onclick="takePledge()" style="background-color: #2e7d32; color: white; border: none; padding: 10px 20px; font-weight: bold; border-radius: 5px; cursor: pointer;">Take a Pledge</button>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Climate Action Project. Built for College Submission.</p>
+    </footer>
+
+    <!-- JavaScript For Interactivity -->
+    <script>
+        function takePledge() {
+            alert("Thank you for taking the pledge to support Climate Action! Together we can save our environment.");
+        }
+    </script>
+
+</body>
+</html>

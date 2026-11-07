@@ -1,0 +1,386 @@
+/* =========================
+   General Settings
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header {
+    width: 100%;
+    background: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   Hero Section
+========================= */
+
+.hero {
+    min-height: 420px;
+    padding: 90px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #eaf2ff, #ffffff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #1d4ed8;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Main Sections
+========================= */
+
+.shopping-section {
+    width: 86%;
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+}
+
+.shopping-section h2 {
+    color: #1d4ed8;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Budget Box
+========================= */
+
+.budget-box {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.budget-box label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+}
+
+#monthlyBudget {
+    width: 250px;
+}
+
+
+/* =========================
+   Budget Cards
+========================= */
+
+.budget-status {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.budget-card {
+    padding: 22px;
+    border-radius: 12px;
+    background: #f8fafc;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.budget-card h3 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.budget-card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+
+/* =========================
+   Category
+========================= */
+
+#category {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+}
+
+
+/* =========================
+   AI Chatbox
+========================= */
+
+.chatbox {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chatbox textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+}
+
+.chatbox button {
+    width: fit-content;
+}
+
+
+/* =========================
+   Recommendation Result
+========================= */
+
+#recommendationResult {
+    min-height: 100px;
+    padding: 20px;
+    background: #f8fafc;
+    border: 1px dashed #94a3b8;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   Product Cards
+   (For JavaScript Products)
+========================= */
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 18px;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 12px 0 8px;
+    color: #222;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.product-rating {
+    margin: 8px 0;
+    color: #555;
+}
+
+.product-card button {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+
+/* =========================
+   Comparison
+========================= */
+
+#comparison {
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+
+/* =========================
+   Wishlist
+========================= */
+
+#wishlistProducts {
+    padding: 20px;
+    background: #fff7ed;
+    border-radius: 10px;
+    min-height: 80px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    margin-top: 50px;
+    padding: 25px;
+    text-align: center;
+    background: #1e293b;
+    color: white;
+}
+
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .shopping-section {
+        width: 92%;
+        padding: 20px;
+    }
+
+    .budget-status {
+        grid-template-columns: 1fr;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .budget-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #monthlyBudget {
+        width: 100%;
+    }
+
+    .chatbox button {
+        width: 100%;
+    }
+}

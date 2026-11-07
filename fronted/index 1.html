@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 25px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #1e3a8a;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        td {
+            padding: 14px 15px;
+            border-bottom: 1px solid #ddd;
+            color: #333;
+        }
+
+        tr:hover {
+            background: #f1f5ff;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #16a34a;
+        }
+
+        .remove-btn {
+            background: #dc2626;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .remove-btn:hover {
+            background: #b91c1c;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 Online Book Store Catalog</h1>
+
+        <div class="table-container">
+            <table id="bookTable">
+
+                <thead>
+                    <tr>
+                        <th>S. No.</th>
+                        <th>Book Name</th>
+                        <th>Publisher Name</th>
+                        <th>Author Name</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>The Alchemist</td>
+                        <td>HarperCollins</td>
+                        <td>Paulo Coelho</td>
+                        <td class="price">₹399</td>
+                        <td>
+                            <button class="remove-btn" onclick="removeBook(this)">
+                                Remove
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Atomic Habits</td>
+                        <td>Penguin Books</td>
+                        <td>James Clear</td>
+                        <td class="price">₹499</td>
+                        <td>
+                            <button class="remove-btn" onclick="removeBook(this)">
+                                Remove
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>The Psychology of Money</td>
+                        <td>Jaico Publishing</td>
+                        <td>Morgan Housel</td>
+                        <td class="price">₹350</td>
+                        <td>
+                            <button class="remove-btn" onclick="removeBook(this)">
+                                Remove
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Rich Dad Poor Dad</td>
+                        <td>Plata Publishing</td>
+                        <td>Robert Kiyosaki</td>
+                        <td class="price">₹450</td>
+                        <td>
+                            <button class="remove-btn" onclick="removeBook(this)">
+                                Remove
+                            </button>
+                        </td><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 25px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #1e3a8a;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        td {
+            padding: 14px 15px;
+            border-bottom: 1px solid #ddd;
+            color: #333;
+        }
+
+        tr:hover {
+            background: #f1f5ff;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #16a34a;
+        }
+
+        .remove-btn {
+            background: #dc2626;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .remove-btn:hover {
+            background: #b91c1c;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 Online Book Store Catalog</h1>
+
+        <div class="table-container">
+            <table id="bookTable">
+
+                <thead>
+                    <tr>
+                        <th>S. No.</th>
+                        <th>Book Name</th>
+                        <th>Publisher Name</th>
+                        <th>Author Name</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>The Alchemist</td>
+                        <td>HarperCollins</td>
+                        <td>Paulo Coelho</td>
+                        <td class="price">₹399</td>
+                        <td>
+                            <button class="remove-btn" onclick="removeBook(this)">
+                                Remove
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Atomic Habits</td>
+                        <td>Penguin Books</td>
+                        <td>James Clear</td>
+                        <td class="price">₹499</td>
+                        <td>
+                            <button class="remove-btn" onclick="removeBook(this)">
+                                Remove
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>The Psychology of Money</td>
+                        <td>Jaico Publishing</td>
+                        <td>Morgan Housel</td>
+                        <td class="price">₹350</td>
+                        <td>
+                            <button class="remove-btn" onclick="removeBook(this)">
+                                Remove
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Rich Dad Poor Dad</td>
+                        <td>Plata Publishing</td>
+                        <td>Robert Kiyosaki</td>
+                        <td class="price">₹450</td>
+                        <td>
+                            <button class="remove-btn" onclick="removeBook(this)">
+                                Remove
+                            </button>
+                        </td>
