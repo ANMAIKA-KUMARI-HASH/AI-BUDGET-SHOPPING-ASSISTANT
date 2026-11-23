@@ -30,10 +30,10 @@ set "BACKEND_DIR=%ROOT_DIR%Backend"
 set "FRONTEND_DIR=%ROOT_DIR%frontend"
 
 echo [2/3] Launching Express Backend Server (Port 5000)...
-start "AI Shopping Backend (Port 5000)" /D "%BACKEND_DIR%" cmd /k "set \"PATH=%PATH%\" && node server.js"
+start "AI Shopping Backend (Port 5000)" /D "%BACKEND_DIR%" cmd /k "node server.js"
 
 echo [3/3] Launching Vite React Frontend (Port 3000)...
-start "AI Shopping Frontend (Port 3000)" /D "%FRONTEND_DIR%" cmd /k "set \"PATH=%PATH%\" && npm run dev"
+start "AI Shopping Frontend (Port 3000)" /D "%FRONTEND_DIR%" cmd /k "npm run dev"
 
 echo.
 echo ========================================================
